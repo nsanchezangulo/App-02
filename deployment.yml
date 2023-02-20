@@ -1,29 +1,29 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: test01
+  name: app02
 spec:
   template:
     metadata:
       labels:
-        app: test01
+        app: app02
     spec:
       containers:
-      - name: test01
-        image: 363412468025.dkr.ecr.us-east-2.amazonaws.com/test01:latest
+      - name: app02
+        image: 363412468025.dkr.ecr.us-east-2.amazonaws.com/app02:latest
   selector:
     matchLabels:
-      app: test01
+      app: app02
 ---
 kind: Service
 apiVersion: v1
 metadata:
-  name: test01
+  name: app02
 spec:
   type: LoadBalancer
   selector:
-    app: test01
+    app: app02
   ports:
   - name: http
-    port: 5001
-    targetPort: 3001
+    port: 5002
+    targetPort: 3002
