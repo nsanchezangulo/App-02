@@ -48,7 +48,7 @@ pipeline {
             }
         }             
         
-
+       /*
         stage('FortiDAST'){
             steps {
                  sh 'export EMAIL=emoran@fortinet.com LICENSE_SERIAL=FFPENT0000233126 ASSET_TOKEN=fPdzdMRWeduq63ad3gSHiUaGCG+ywawrNp5Bmvk8fdYwKcb+cs33rW+qTq46BmlzU2SX1YMhGzI3tXRJDcOzjHI1B1e5TtrT5mTBEw== SCANURL=http://app02.emoranlabs.online:5002 SCANTYPE=1 ASSET=fc15c209-4fe3-4138-8ca4-8349f972f565'
@@ -56,7 +56,7 @@ pipeline {
                  sh 'docker pull registry.fortidast.forticloud.com/dastdevopsproxy:latest'
                  sh 'docker run --rm --env-file /tmp/env --network=host registry.fortidast.forticloud.com/dastdevopsproxy:latest'
             }
-        }
+        }*/
         
         
         stage('FDEVSEC-DAST'){
