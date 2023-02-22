@@ -26,4 +26,4 @@ spec:
   ports:
   - name: http
     port: 5002
-    targetPort: 3002
+    targetPort: 4002
