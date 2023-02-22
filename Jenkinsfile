@@ -41,7 +41,7 @@ pipeline {
                 }
             }
         }
-        
+    /*    
     stage('Deploy'){
             steps {
                  sh 'kubectl apply -f deployment.yml'
@@ -56,6 +56,6 @@ pipeline {
                  sh 'docker run --rm --env-file /tmp/env --mount type=bind,source=$PWD,target=/scan registry.fortidevsec.forticloud.com/fdevsec_dast:latest'                 
             }
         }
-        
+        */
     }
 }
